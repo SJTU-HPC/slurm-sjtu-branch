@@ -216,6 +216,7 @@ AX_CHECK_ZLIB([], [])
 X_AC_LZ4
 X_AC_HWLOC
 X_AC_NVML
+X_AC_DSMI
 X_AC_RSMI
 X_AC_PMIX
 X_AC_FREEIPMI
@@ -505,6 +506,7 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/gres/nic/Makefile
 		 src/plugins/gres/mic/Makefile
 		 src/plugins/gres/mps/Makefile
+		 src/plugins/gres/npu/Makefile
 		 src/plugins/jobacct_gather/Makefile
 		 src/plugins/jobacct_gather/common/Makefile
 		 src/plugins/jobacct_gather/linux/Makefile
@@ -540,6 +542,8 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/node_features/Makefile
 		 src/plugins/node_features/knl_cray/Makefile
 		 src/plugins/node_features/knl_generic/Makefile
+		 src/plugins/npu/Makefile
+		 src/plugins/npu/generic/Makefile
 		 src/plugins/power/Makefile
 		 src/plugins/power/common/Makefile
 		 src/plugins/power/cray_aries/Makefile
