@@ -1,3 +1,3 @@
 # Makefile for gres plugins
 
-SUBDIRS = common gpu nic mic mps
+SUBDIRS = common gpu npu nic mic mps
