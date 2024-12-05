@@ -35,6 +35,7 @@ Source:		%{slurm_source_dir}.tar.bz2
 # --without x11		%_without_x11 1		disable internal X11 support
 # --with ucx		%_with_ucx path		require ucx support
 # --with pmix		%_with_pmix path	require pmix support
+# --with dsmi		                	require dsmi support
 
 #  Options that are off by default (enable with --with <opt>)
 %bcond_with cray
@@ -296,6 +297,19 @@ This module restricts access to compute nodes in a cluster where Slurm is in
 use.  Access is granted to root, any user with an Slurm-launched job currently
 running on the node, or any user who has allocated resources on the node
 according to the Slurm
+%endif
+
+%if %{with dsmi}
+%package dsmi_slurm
+Summary: dsmi module for slurm to manage Ascend Atlas device
+Group: System Environment/Base
+Requires: %{name}%{?_isa} = %{version}-%{release}
+BuildRequires: npu_generic
+AutoReqProv: no
+Obsoletes: npu_generic
+Provides: libdrvdsmi_host.so
+%description pam_slurm
+This module is use for slurm to manage Ascend Atlas device
 %endif
 
 %if %{with slurmrestd}
