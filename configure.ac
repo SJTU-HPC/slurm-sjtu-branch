@@ -226,6 +226,7 @@ AX_COMPARE_VERSION($[HDF5_VERSION], [eq0], [1.8],
 X_AC_LZ4
 X_AC_HWLOC
 X_AC_NVML
+X_AC_DSMI
 X_AC_RSMI
 X_AC_ONEAPI
 X_AC_PMIX
@@ -496,6 +497,19 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/gres/shard/Makefile
 		 src/plugins/hash/Makefile
 		 src/plugins/hash/k12/Makefile
+		 src/plugins/gres/npu/Makefile
+		 src/plugins/jobacct_gather/Makefile
+		 src/plugins/jobacct_gather/common/Makefile
+		 src/plugins/jobacct_gather/linux/Makefile
+		 src/plugins/jobacct_gather/cgroup/Makefile
+		 src/plugins/jobacct_gather/none/Makefile
+		 src/plugins/jobcomp/Makefile
+		 src/plugins/jobcomp/elasticsearch/Makefile
+		 src/plugins/jobcomp/filetxt/Makefile
+		 src/plugins/jobcomp/lua/Makefile
+		 src/plugins/jobcomp/none/Makefile
+		 src/plugins/jobcomp/script/Makefile
+		 src/plugins/jobcomp/mysql/Makefile
 		 src/plugins/job_container/Makefile
 		 src/plugins/job_container/cncu/Makefile
 		 src/plugins/job_container/none/Makefile
@@ -545,6 +559,8 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/openapi/v0.0.36/Makefile
 		 src/plugins/openapi/v0.0.37/Makefile
 		 src/plugins/openapi/v0.0.38/Makefile
+		 src/plugins/npu/Makefile
+		 src/plugins/npu/generic/Makefile
 		 src/plugins/power/Makefile
 		 src/plugins/power/common/Makefile
 		 src/plugins/power/cray_aries/Makefile
