@@ -3,7 +3,7 @@
 ##    Yinping Ma <mayinping@pku.edu.cn>, Chun Fan <fanchun@pku.edu.cn>
 ##
 ##  SYNOPSIS:
-##    X_AC_NVML
+##    X_AC_DSMI
 ##
 ##  DESCRIPTION:
 ##    Determine if Ascend's DSMI API library exists
