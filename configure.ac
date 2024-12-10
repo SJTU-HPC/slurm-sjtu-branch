@@ -226,6 +226,7 @@ AC_DEFINE([H5_NO_DEPRECATED_SYMBOLS], [1], [Make sure we get the 1.8 HDF5 API])
 X_AC_LZ4
 X_AC_HWLOC
 X_AC_NVML
+X_AC_DSMI
 X_AC_RSMI
 X_AC_PMIX
 X_AC_FREEIPMI
@@ -516,6 +517,7 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/gres/gpu/Makefile
 		 src/plugins/gres/nic/Makefile
 		 src/plugins/gres/mps/Makefile
+		 src/plugins/gres/npu/Makefile
 		 src/plugins/jobacct_gather/Makefile
 		 src/plugins/jobacct_gather/common/Makefile
 		 src/plugins/jobacct_gather/linux/Makefile
@@ -559,6 +561,8 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/openapi/v0.0.37/Makefile
 		 src/plugins/openapi/dbv0.0.36/Makefile
 		 src/plugins/openapi/dbv0.0.37/Makefile
+		 src/plugins/npu/Makefile
+		 src/plugins/npu/generic/Makefile
 		 src/plugins/power/Makefile
 		 src/plugins/power/common/Makefile
 		 src/plugins/power/cray_aries/Makefile

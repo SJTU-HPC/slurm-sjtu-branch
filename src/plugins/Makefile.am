@@ -22,6 +22,7 @@ SUBDIRS = \
 	mpi			\
 	node_features		\
 	openapi			\
+	npu			\
 	power			\
 	preempt			\
 	prep			\
