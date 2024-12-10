@@ -498,6 +498,7 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/hash/Makefile
 		 src/plugins/hash/k12/Makefile
 		 src/plugins/gres/npu/Makefile
+		 src/plugins/gres/dcu/Makefile
 		 src/plugins/jobacct_gather/Makefile
 		 src/plugins/jobacct_gather/common/Makefile
 		 src/plugins/jobacct_gather/linux/Makefile

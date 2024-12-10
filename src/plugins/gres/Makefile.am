@@ -1,3 +1,3 @@
 # Makefile for gres plugins
 
-SUBDIRS = common gpu npu nic mps shard
+SUBDIRS = common gpu npu dcu nic mps shard
